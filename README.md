@@ -1,0 +1,1 @@
+All the steps are in the readme.ipynb
