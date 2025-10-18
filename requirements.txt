@@ -1,0 +1,8 @@
+sentence-transformers #huggingface transformers
+langchain
+langchain_community
+langchain_openai
+langchain_pinecone
+flask
+pypdf
+python-dotenv
