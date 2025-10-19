@@ -1,9 +1,18 @@
-sentence-transformers #huggingface transformers
+sentence_transformers
 langchain
-langchain_community
+langchain-core
+langchain-community
 langchain_openai
+langchain-google-genai
+langchain-huggingface
 langchain_pinecone
-flask
+pinecone-client
 pypdf
+chroma
+faiss-cpu
+#llama-cpp-python #Use !CMAKE_ARGS="-DLLAMA_METAL=on" FORCE_CMAKE=1 pip install llama-cpp-python
 python-dotenv
 -e .
+einops
+pinecone
+flask
