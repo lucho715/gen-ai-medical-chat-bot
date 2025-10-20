@@ -61,7 +61,7 @@ const App = () => {
         <div className="chat-header">
           <div className="header-info">
             <ChatbotIcon />
-            <h2 className="logo-text">Dr. Chatbot</h2>
+            <h2 className="logo-text">Medicine Encyclopedia</h2>
           </div>
           <button onClick={() => setShowChatbot((prev) => !prev)}
           className="material-symbols-rounded">keyboard_arrow_down</button>
@@ -72,7 +72,7 @@ const App = () => {
           <div className="message bot-message">
             <ChatbotIcon />
             <p className="message-text">
-              Hi there! How may I help you?
+              Hi there! What do you want to know?
             </p>
           </div>
           {chatHistory.map((chat, index) => (
