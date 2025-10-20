@@ -16,3 +16,4 @@ python-dotenv
 einops
 pinecone
 flask
+flask_cors

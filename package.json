@@ -1,0 +1,21 @@
+{
+  "name": "gen-ai-medical-chat-bot",
+  "version": "1.0.0",
+  "description": "All the steps are in the readme.ipynb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucho715/gen-ai-medical-chat-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lucho715/gen-ai-medical-chat-bot/issues"
+  },
+  "homepage": "https://github.com/lucho715/gen-ai-medical-chat-bot#readme"
+}
