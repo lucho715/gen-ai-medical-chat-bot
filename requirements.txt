@@ -1,5 +1,5 @@
 sentence_transformers
-langchain
+langchain==0.3.27
 langchain-core
 langchain-community
 langchain_openai

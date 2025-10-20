@@ -11,6 +11,27 @@ This project shows the creation of a AI chatbot with the following characteristi
 9. A chatbot is created with nodejs, vite, and react.
 10. The chabot receives the user message and invokes Flash rest APIs.
 
+# Notes
+1. Using langchain 0.3.27 as 1.0.0+ breaks langchain.chains packages
+
+# Run Project Requirements
+1. conda (optional but recommended). Example: ```wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh```
+2. pyhon 3.10
+3. nodejs (https://nodejs.org/en/download) 
+
 # Run Project
-1. Run: ```python app.py```
-2. Browser: ```http://localhost:8081``` 
+1. git clone https://github.com/lucho715/gen-ai-medical-chat-bot
+2. Go to folder: gen-ai-medical-chat-bot
+3. Create conda environment with python 3.10 ```conda create -n gen-ai-medical-chat-bot```
+4. Activate conda environment ```conda activate gen-ai-medical-chat-bot```
+5. Download required packages ```pip install -r requirements.txt```
+6. Supply your API_KEYs. This projects use PINECONE_API_KEY and OPENAI_API_KEY.
+7. Change directory to ```chatbot-reactjs``` and edit .env to add your get route rest api configured in flask (example: running locally is http://localhost:8081/get)
+8. In directory ```chatbot-reactjs``` run: ```npm install``` and then: ```npm run build```
+8. Run: ```python app.py```
+9. Browser: ```http://localhost:8081``` 
+
+# Run on a domain using a reverse proxy (Optional)
+1. Edit vite.config.js to use a base url path, example: ```base: '/gen-ai-medical-chat-bot/',```
+2. This project use Caddy. Edit ```/etc/caddy/Caddyfile``` add reverse proxy ```handle_path /gen-ai-medical-chat-bot/* { reverse_proxy 127.0.0.1:8081 }```
+3. In browser, navigate to: ```https://yourdomain.com/gen-ai-medical-chat-bot/``` (last forward slash is import or add redirection in caddy file)

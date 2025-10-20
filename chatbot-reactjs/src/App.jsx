@@ -30,8 +30,7 @@ const App = () => {
     
 
     try {
-      //const response = await fetch(import.meta.env.VITE_API_URL, requestOptions);
-      const response = await fetch("http://localhost:8081/get", requestOptions);
+      const response = await fetch(import.meta.env.VITE_API_URL, requestOptions);
       const data = await response.json();
       if(!response.ok) throw new Error(data.error.message || "Something is wrong");
       //console.log(data);
