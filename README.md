@@ -34,7 +34,7 @@ This project shows the creation of a AI chatbot using RAG with the following cha
 9. Browser: ```http://localhost:8081``` 
 
 # Run on a domain using a reverse proxy (Optional)
-1. Edit vite.config.js to use a base url path, example: ```base: '/gen-ai-medical-chat-bot/',```
+1. Edit vite.config.js to use a base url path, example: ```base: '/gen-ai-medical-chat-bot/',``` (after ```plugins: [react()],```)
 2. This project use Caddy. Edit ```/etc/caddy/Caddyfile``` add reverse proxy ```handle_path /gen-ai-medical-chat-bot/* { reverse_proxy 127.0.0.1:8081 }```
 3. In browser, navigate to: ```https://yourdomain.com/gen-ai-medical-chat-bot/``` (last forward slash is import or add redirection in caddy file)
 
@@ -45,3 +45,7 @@ https://luchoyang.app/gen-ai-medical-chat-bot/
 1. What is Pancreatitis? Answer: Pancreatitis is an inflammation of the pancreas, which is crucial for digestion. It can be acute, starting suddenly with the potential for full recovery, or chronic, progressing slowly with ongoing damage to the pancreas. Common causes include gallstones, alcoholism, certain medications, infections, and structural issues in the pancreatic or bile ducts.
 2. What is it symptoms? Answer: Symptoms of pancreatitis include intense and steady pain in the upper right abdomen that may radiate to the back, nausea, vomiting, and abdominal swelling. Patients often experience shallow breathing due to pain with deeper breaths. In chronic cases, additional symptoms may include weight loss, malnutrition, and diabetes.
 3. what are the treatments? Treatment for pancreatitis typically involves hospitalization for pain management, hydration, and nutritional support. In cases of chronic pancreatitis, lifestyle changes such as abstaining from alcohol and dietary modifications are essential, along with medications to manage pain and digestive enzyme supplements. Surgical options, including pancreatectomy, may be considered for severe cases to relieve pain or address complications.
+
+<p align="center">
+  <img src="./assets/demo-gen-ai-medical-chat-bot.gif" />
+</p>
