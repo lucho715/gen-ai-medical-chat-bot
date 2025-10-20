@@ -15,9 +15,7 @@ const App = () => {
   }
 
   const generateBotResponse = async (history) => {
-    console.log(history)
     // Format chat with API request
-    
     history = history.map(({role, text}) => ({role, parts: [{text}]}))
     const requestOptions = {
       method: "POST",

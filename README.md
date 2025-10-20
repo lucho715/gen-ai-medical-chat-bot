@@ -27,8 +27,8 @@ This project shows the creation of a AI chatbot using RAG with the following cha
 3. Create conda environment with python 3.10 ```conda create -n gen-ai-medical-chat-bot```
 4. Activate conda environment ```conda activate gen-ai-medical-chat-bot```
 5. Download required packages ```pip install -r requirements.txt```
-6. Supply your API_KEYs. This projects use PINECONE_API_KEY and OPENAI_API_KEY.
-7. Change directory to ```chatbot-reactjs``` and edit .env to add your get route rest api configured in flask (example: running locally is http://localhost:8081/get)
+6. Supply python .env values: PINECODE_INDEX_NAME, PINECONE_API_KEY, and OPENAI_API_KEY. 
+7. Change directory to ```chatbot-reactjs``` and edit vibe .env to add VIBE_API_URL your get route api configured in flask (example: running locally is http://localhost:8081/get)
 8. In directory ```chatbot-reactjs``` run: ```npm install``` and then: ```npm run build```
 8. Run: ```python app.py```
 9. Browser: ```http://localhost:8081``` 

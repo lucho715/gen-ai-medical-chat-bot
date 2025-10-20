@@ -6,7 +6,7 @@ const ChatForm = ({chatHistory, setChatHistory, generateBotResponse}) => {
     e.preventDefault() /* Prevent submit */
     const userMessage = inputRef.current.value.trim();
     if (!userMessage) return;
-    inputRef.current.value = ""; /* Clear message after submittion */
+    inputRef.current.value = ""; /* Clear message after submit */
 
     setChatHistory((history) => [...history, { role: "user", text: userMessage }])
 
